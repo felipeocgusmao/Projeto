@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- Na primeira linha está definindo qual o tipo de documento que está sendo utilizado [no caso, html] -->
+<html lang="pt-br">
+<!-- Na segunda linha tem o html em sí... o document element ou root element [elemento raiz do html], nele se encontra um (a) propriedade/atributo  "lang" [linguagem] -->
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <!-- este meta define quais os conjuntos de caracteres que vamos utilizar na página, colocando desta, conseguimos utilizar os caracteres  -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Este meta tem a função de deixar compátiveis com navegadores mais antigos -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Este tem a função "viewport" que todo o texto visível na página tenha o conteudo dentro do local comativel com os devices [se for celular, deixa a pagina adaptavel com o aparelho e assim com outros tipos de dispositivos] -->
+  <title>DevLinks</title>
+  <link rel="stylesheet" href="./style.css" />
+  <!-- A tag link funciona da seguinte forma: temos o relatioin [relacionamento] é um relacionamento com um arquivo do tipo stylesheet.Então eu aviso para a tag que tipo de arquivo que eu vou colocar nessa referência [ href ] que é um atributo em que lugar do mundo vou colocar agora. -->
+</head>
+
+<body>
+  <div id="container">
+    <div id="profile">
+      <img src="./assets/avatar.png" alt="foto de casamento com fundo preto e luzes laranjas">
+      <!-- A tag image vai ter dois atributos. O primeiro é a source [localização do arquivo] -->
+      <!-- A tag alternativo é pra caso não seja localizado a imagem -->
+      <p>@fee.gusmao</p>
+    </div>
+
+    <div id="switch" onclick="toggleMode()">
+      <button>
+      </button>
+      <span></span>
+    </div>
+
+    <div>
+      <ul>
+        <li>
+          <a href="#" target="_blank">Meu Whatsapp</a>
+        </li>
+
+        <li>
+          <a href="https://instagram.com/fee.gusmao/" target="_blank">Meu Instagram</a>
+        </li>
+
+        <li>
+          <a href="https://github.com/felipegusmao" target="_blank">Veja meu portifólio</a>
+          <!-- é adicionado # para ao clicar no link não direcionar a lugar nenhum -->
+          <!-- a é um link que vamos adicionar -->
+        </li>
+        <!-- li é uma lista, um item da lista -->
+      </ul>
+      <!-- ul é uma propriedade de lista desordenada -->
+      <div id="social-links">
+        <a href="#" target="_blank">
+          <ion-icon name="logo-whatsapp"></ion-icon>
+        </a>
+
+        <a href="https://https://instagram.com/fee.gusmao/" target="_blank">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+
+        <a href="https://github.com/felipegusmao" target="_blank">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+
+      </div>
+      <footer>
+        Feito por <a href="https://github.com/felipegusmao" target="_blank"> Felipe Gusmao
+        </a>
+      </footer>
+    </div>
+  </div>
+  <!-- Nomes padrões para usar na html. div é uma caixa genérica que não tem estilos que o browser aplica nela. -->
+  <!-- ID é como se fosse o rg deste identificador. -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <script src="./script.js"></script>
+</body>
+<!-- Essa tag é todo o visivel na pagina -->
+
+<!-- Temos aqui as tags filhas [também chamados de nós oou parents and children] head e body.
+    A tag head é responsável em ajustar configurações do nosso documento que não são visiveis para quem está acessando a nossa página [ o unico visível é o "tittle" ]; o restante são meta configurações do próprio documento -->
+
+</html>
+
+<!-- Tod esse recuo que está entre as tags chama-se identação. É somente para melhor vizualização e organização de onde começa e termina as tags -->
